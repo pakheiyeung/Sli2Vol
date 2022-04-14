@@ -18,11 +18,9 @@ Sli2Vol: Annotate a 3D Volume from a Single Slice with Self-Supervised Learning
 }
 ```
 ## Contents
-- [Sli2Vol: Annotate a 3D Volume from a Single Slice with Self-Supervised Learning](#sli2vol-annotate-a-3d-volume-from-a-single-slice-with-self-supervised-learning)
-  - [Contents](#contents)
-  - [Dependencies](#dependencies)
-  - [Correspondence Flow Network](#correspondence-flow-network)
-  - [Verification Module](#verification-module)
+  1. [Dependencies](#dependencies)
+  2. [Correspondence Flow Network](#correspondence-flow-network)
+  3. [Verification Module (TODO)](#verification-module)
    
 
 ## Dependencies
@@ -35,3 +33,4 @@ Sli2Vol: Annotate a 3D Volume from a Single Slice with Self-Supervised Learning
 
 ## Verification Module
 To do, but it would be an easy implementation based on the description in the paper.
+
