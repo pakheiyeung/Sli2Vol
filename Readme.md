@@ -30,7 +30,3 @@ Sli2Vol: Annotate a 3D Volume from a Single Slice with Self-Supervised Learning
 ## Correspondence Flow Network
 1. The correspondence flow network as described in the paper is coded as the *class Correspondence_Flow_Net* in `model.py`
 2. It computes the affinity matrix between the input *slice1_input* and *slice2_input* and use the matrix to reconstruct *slice2_reconstructed* from the input *slice1*
-
-## Verification Module
-To do, but it would be an easy implementation based on the description in the paper.
-
