@@ -47,7 +47,7 @@ except:
 
 
 
-def segmentation_refine_intensity_similarity_multi(mask_img, mask_collection, img, img_collection, template):
+def verification_module(mask_img, mask_collection, img, img_collection, template):
     def getLargestCC(segmentation):
         labels = label(segmentation)
         if labels.max() == 0:
@@ -267,7 +267,7 @@ if __name__ ==  '__main__':
                         
                         
                         
-                        output, template = segmentation_refine_intensity_similarity_multi(output, mask_collection, (img_vol.squeeze().detach().cpu().numpy())[i-1:i], img_collection, template)
+                        output, template = verification_module(output, mask_collection, (img_vol.squeeze().detach().cpu().numpy())[i-1:i], img_collection, template)
                                                 
                         time_count.append(time.time() - start_time)
     
@@ -316,7 +316,7 @@ if __name__ ==  '__main__':
                         
                         
                         
-                        output, template = segmentation_refine_intensity_similarity_multi(output, mask_collection, (img_vol.squeeze().detach().cpu().numpy())[i+1:i+2], img_collection, template)
+                        output, template = verification_module(output, mask_collection, (img_vol.squeeze().detach().cpu().numpy())[i+1:i+2], img_collection, template)
                        
                         time_count.append(time.time() - start_time)
     
